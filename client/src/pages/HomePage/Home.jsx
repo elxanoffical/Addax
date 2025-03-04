@@ -7,6 +7,8 @@ import Hero from "../../components/hero/hero";
 import Welcome from "../../components/welcome-addax/welcome";
 import About from "../../components/about-addax/about";
 import Footer from "../../components/footer/footer";
+import TeamSection from "../../components/team/team";
+import Team from "../../components/team/team";
 
 const Home = () => {
   return (
@@ -16,6 +18,7 @@ const Home = () => {
       <Hero />
 
       <Welcome />
+      <Team/>
       <About />
       <Footer/>
 
