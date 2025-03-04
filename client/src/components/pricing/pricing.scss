@@ -1,0 +1,173 @@
+$color_1: red;
+$color_2: #000;
+$color_3: #fff;
+$color_4: #ff2c57;
+$font-family_1: "Poppins", sans-serif;
+
+#pricing-section {
+    background-color: #f6f6f6;
+    padding: 50px 0;
+    font-family: $font-family_1;
+}
+
+#section-header {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+
+    > .liner {
+        display: flex;
+        gap: 6px;
+        transition: 0.5s;
+        > #line1 {
+            transition: 0.4s;
+            height: 50%;
+            border: 2px solid $color_1;
+        }
+        > #line2 {
+            transition: 0.4s;
+            height: 100%;
+            border: 2px solid $color_1;
+        }
+    }
+    &:hover {
+        .liner {
+            #line1 {
+                height: 100%;
+            }
+            #line2 {
+                height: 50%;
+            }
+        }
+    }
+
+    > .txt {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        > h2 {
+            font-size: 40px;
+            font-weight: 200;
+            span {
+                color: $color_4;
+                font-weight: 700;
+            }
+        }
+        > p {
+            font-size: 18px;
+            font-weight: 200;
+            max-width: 700px;
+        }
+    }
+}
+
+.price-cards-wrapper {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between; 
+}
+
+.price-card {
+    width: 100%;
+    max-width: 370px;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
+    transition: 0.4s;
+    background: url("../../assets/image/patt.png");
+    background-size: cover;
+    background-position: center;
+
+    .header-wrapper {
+        background-color: $color_4;
+        padding: 10px 0;
+        position: relative;
+
+        h2 {
+            color: $color_3;
+            text-align: center;
+            font-weight: 500;
+            font-size: 26px;
+            letter-spacing: 0.8px;
+        }
+
+        .italic-box {
+            width: 20px;
+            height: 20px;
+            background-color: $color_4;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translate(-50%) rotate(45deg);
+        }
+    }
+
+    .price-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0 20px;
+
+        .price-main-wrapper {
+            h2 {
+                color: $color_4;
+                font-size: 38px;
+                font-weight: 500;
+                letter-spacing: 0.8px;
+
+                sup {
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+            }
+            p {
+                text-align: end;
+                color: #666;
+                font-size: 14px;
+                letter-spacing: 0.6px;
+            }
+        }
+    }
+
+    ul {
+        border-top: 2px solid #eee;
+        border-bottom: 2px solid #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        padding: 24px 0;
+
+        li {
+            color: #666;
+            letter-spacing: 0.6px;
+
+            i {
+                color: $color_4;
+                font-size: 23px;
+                padding-right: 3px;
+            }
+        }
+    }
+
+    button {
+        padding: 9px 16px;
+        background-color: $color_4;
+        color: $color_3;
+        border-radius: 20px;
+        border: 1px solid $color_4;
+        transition: 0.3s;
+        letter-spacing: 0.8px;
+        margin: 10px 0;
+
+        &:hover {
+            color: $color_4;
+            background-color: $color_3;
+        }
+    }
+
+    &:hover {
+        transform: translate(5px);
+    }
+}

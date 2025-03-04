@@ -5,159 +5,168 @@ $color_4: #ff2c57;
 $font-family_1: "Poppins", sans-serif;
 
 #team-section {
-  .container {
-    #section-header {
-      display: flex;
-      gap: 8px;
-      &:hover {
-        .liner {
-          #line1 {
-            height: 100%;
-          }
-          #line2 {
-            height: 50%;
-          }
+    padding: 50px 0;
+    font-family: $font-family_1;
+    .container {
+        #section-header {
+            display: flex;
+            gap: 8px;
+            &:hover {
+                .liner {
+                    #line1 {
+                        height: 100%;
+                    }
+                    #line2 {
+                        height: 50%;
+                    }
+                }
+            }
+            > .liner {
+                display: flex;
+                gap: 6px;
+                transition: 0.5s;
+                > #line1 {
+                    transition: 0.4s;
+                    height: 50%;
+                    border: 2px solid $color_1;
+                }
+                > #line2 {
+                    transition: 0.4s;
+                    height: 100%;
+                    border: 2px solid $color_1;
+                }
+            }
+            > .txt {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                > span {
+                    color: $color_4;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+                > h1 {
+                    font-size: 40px;
+                    font-weight: 200;
+                    span {
+                        color: $color_4;
+                        font-weight: 700;
+                    }
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: 200;
+                    width: 700px;
+                }
+            }
         }
-      }
-      > .liner {
-        display: flex;
-        gap: 6px;
-        transition: 0.5s;
-        > #line1 {
-          transition: 0.4s;
-          height: 50%;
-          border: 2px solid $color_1;
-        }
-        > #line2 {
-          transition: 0.4s;
-          height: 100%;
-          border: 2px solid $color_1;
-        }
-      }
-      > .txt {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        > span {
-          color: $color_4;
-          font-size: 20px;
-          font-weight: 300;
-        }
-        > h1 {
-          font-size: 40px;
-          font-weight: 200;
-          span {
-            color: $color_4;
-            font-weight: 700;
-          }
-        }
-        p {
-          font-size: 18px;
-          font-weight: 200;
-          width: 700px;
-        }
-      }
-    }
 
-    .team-cards-wrapper {
-      padding: 20px 0;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      
-      .team-card {
-        width: 400px;
-        height: 400px;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: 0.5s;
-        }
-        
-        // Yazılar: başlanğıcda kartın alt hissəsində yerləşir
-        .text-wrapper {
-          position: absolute;
-          left: 20px;
-          right: 20px;
-          top: 100%; // yazının başlanğıc mövqeyi – kartın alt kənarı
-          transform: translateY(-120%); // tam görünən etmək üçün
-          background: $color_3;
-          text-align: center;
-          z-index: 99;
-          transition: top 1s ease 0.1s, transform 1.2s ease 0.9s;
-          
-          h2 {
-            font-weight: 600;
-            font-size: 22px;
-            color: $color_2;
-          }
-          
-          span {
-            color: #666;
-          }
-        }
-        
-        // İkonlar: başlanğıcda kartın yuxarı hissəsində gizlidir
-        .socials-media-links {
-          position: absolute;
-          left: 50%;
-          top: 0;  // başlanğıc mövqeyi – kartın yuxarı kənarı
-          transform: translateX(-50%) translateY(-100%);
-          opacity: 0;
-          padding: 10px;
-          display: flex;
-          align-items: center;
-          gap: 15px; // ikonlar arasında kifayət qədər boşluq
-          transition: top 1s ease 0.3s, transform 1.2s ease 0.3s, opacity 1.2s ease 0.3s;
-          
-          svg {
-            font-size: 34px;              // Böyüdülmüş ikon ölçüsü
-            color: $color_3;              // İkon rəngi: ağ
-            padding: 8px;
-            border-radius: 50%;
-            border: 1px solid $color_3;   // Border rəngi: ağ
-            cursor: pointer;
-            transition: background-color 0.3s ease, border-color 0.3s ease;
-          }
-        }
-        
-        // Hover zamanı efektlər: 
-        &:hover {
-          img {
-            filter: brightness(50%);
-          }
-          
-          .text-wrapper {
-            // Tədricən mərkəzə keçid
-            top: 50%;
-            transform: translateY(-50%);
-            background: transparent;
-            h2 {
-              color: #fff;
+        .team-cards-wrapper {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            .team-card {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.5s;
+                }
+
+                // Yazılar: başlanğıcda kartın alt hissəsində yerləşir
+                .text-wrapper {
+                    position: absolute;
+                    left: 20px;
+                    right: 20px;
+                    top: 100%; // yazının başlanğıc mövqeyi – kartın alt kənarı
+                    transform: translateY(-120%); // tam görünən etmək üçün
+                    background: $color_3;
+                    text-align: center;
+                    z-index: 99;
+                    transition:
+                        top 1s ease 0.1s,
+                        transform 1.2s ease 0.9s;
+
+                    h2 {
+                        font-weight: 600;
+                        font-size: 22px;
+                        color: $color_2;
+                    }
+
+                    span {
+                        color: #666;
+                    }
+                }
+
+                // İkonlar: başlanğıcda kartın yuxarı hissəsində gizlidir
+                .socials-media-links {
+                    position: absolute;
+                    left: 50%;
+                    top: 0; // başlanğıc mövqeyi – kartın yuxarı kənarı
+                    transform: translateX(-50%) translateY(-100%);
+                    opacity: 0;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px; // ikonlar arasında kifayət qədər boşluq
+                    transition:
+                        top 1s ease 0.3s,
+                        transform 1.2s ease 0.3s,
+                        opacity 1.2s ease 0.3s;
+
+                    svg {
+                        font-size: 34px; // Böyüdülmüş ikon ölçüsü
+                        color: $color_3; // İkon rəngi: ağ
+                        padding: 8px;
+                        border-radius: 50%;
+                        border: 1px solid $color_3; // Border rəngi: ağ
+                        cursor: pointer;
+                        transition:
+                            background-color 0.3s ease,
+                            border-color 0.3s ease;
+                    }
+                }
+
+                // Hover zamanı efektlər:
+                &:hover {
+                    img {
+                        filter: brightness(50%);
+                    }
+
+                    .text-wrapper {
+                        // Tədricən mərkəzə keçid
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: transparent;
+                        h2 {
+                            color: #fff;
+                        }
+                        span {
+                            color: #fff;
+                        }
+                    }
+
+                    .socials-media-links {
+                        // Tədricən mərkəzə doğru hərəkət
+                        top: 35%;
+                        transform: translateX(-50%) translateY(-50%);
+                        opacity: 1;
+                    }
+                }
+
+                .socials-media-links svg:hover {
+                    background-color: $color_4;
+                    border-color: $color_4;
+                }
             }
-            span {
-              color: #fff;
-            }
-          }
-          
-          .socials-media-links {
-            // Tədricən mərkəzə doğru hərəkət
-            top: 35%;
-            transform: translateX(-50%) translateY(-50%);
-            opacity: 1;
-          }
         }
-        
-        .socials-media-links svg:hover {
-          background-color: $color_4;
-          border-color: $color_4;
-        }
-      }
     }
-  }
 }
