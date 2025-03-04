@@ -1,15 +1,13 @@
 import React from "react";
 import "./Home.scss";
 import { footerlinks } from "../../data/footer";
-import { MdDesignServices } from "react-icons/md";
-import { LiaLaptopCodeSolid } from "react-icons/lia";
-import { HiOutlineSupport } from "react-icons/hi";
-import { FaArrowRight } from "react-icons/fa6";
+
 import { FaCheck } from "react-icons/fa6";
 import video from "../../assets/image/about.jpg";
 import stragety from "../../assets/image/stragety.jpg";
 import Header from "../../components/header/header";
 import Hero from "../../components/hero/hero";
+import Welcome from "../../components/welcome-addax/welcome";
 
 const Home = () => {
   return (
@@ -19,62 +17,8 @@ const Home = () => {
        
        <Hero/>
      
-
-      <div className="welcome-addax">
-        <div className="container">
-          <div className="section-title">
-            <div className="liner">
-              <div id="line1"></div>
-              <div id="line2"></div>
-            </div>
-            <div className="txt">
-              <span>We Are Creative</span>
-              <h1>
-                Welcome to <span>Addax</span>
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="single-box">
-              <MdDesignServices className="icon" />
-              <h3>Creative Design</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-              <button>
-                <FaArrowRight className="icons" />
-              </button>
-            </div>
-            <div className="single-box">
-              <LiaLaptopCodeSolid className="icon" />
-              <h3>Friendly Codes</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-              <button>
-                <FaArrowRight className="icons" />
-              </button>
-            </div>
-            <div className="single-box">
-              <HiOutlineSupport className="icon" />
-              <h3>Fast Support</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
-              </p>
-              <button>
-                <FaArrowRight className="icons" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Welcome/>
+      
 
       <div className="about-addax">
         <div className="container">

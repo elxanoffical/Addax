@@ -1,0 +1,133 @@
+$color_1: red;
+$color_2: #000;
+$color_3: #fff;
+$color_4: #ff2c57;
+$font-family_1: "Poppins", sans-serif;
+
+.welcome-addax {
+  padding: 40px 0; // Ümumi padding azaldıldı
+  > .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; // Elementlər arasındakı boşluq azaldıldı
+
+    > .section-title {
+      display: flex;
+      gap: 8px;
+      &:hover {
+        .liner {
+          #line1 {
+            height: 100%;
+          }
+          #line2 {
+            height: 50%;
+          }
+        }
+      }
+      > .liner {
+        display: flex;
+        gap: 6px;
+        transition: 0.5s;
+        > #line1 {
+          transition: 0.4s;
+          height: 50%; // Başlanğıc hündürlük azaldıldı
+          border: 2px solid red;
+        }
+        > #line2 {
+          transition: 0.4s;
+          height: 100%; // Başlanğıc hündürlük azaldıldı
+          border: 2px solid red;
+        }
+      }
+      > .txt {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        > span {
+          color: $color_4;
+          font-size: 20px; // Font ölçüsü azaldıldı
+          font-weight: 300;
+        }
+        > h1 {
+          font-size: 40px; // Font ölçüsü azaldıldı
+          font-weight: 200;
+          span {
+            color: $color_4;
+            font-weight: 700;
+          }
+        }
+        p {
+          font-size: 18px; // Font ölçüsü azaldıldı
+          font-weight: 200;
+          width: 700px; // Maksimum genişlik azaldıldı
+        }
+      }
+    }
+    
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px; // Boşluq azaldıldı
+      padding: 10px; // Padding azaldıldı
+      
+      .single-box {
+        padding: 20px; // Padding azaldıldı
+        height: 280px; // Hündürlük azaldıldı
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px; // Aradakı boşluq azaldıldı
+        box-shadow: 5px 5px 40px #00000015;
+        transition: 0.3s;
+        position: relative;
+        
+        .icon {
+          color: red;
+          width: 50px;  // İkon ölçüsü azaldıldı
+          height: 50px; // İkon ölçüsü azaldıldı
+        }
+        h3 {
+          font-size: 22px; // Başlıq ölçüsü azaldıldı
+          font-weight: 600;
+        }
+        p {
+          font-size: 18px; // Mətn ölçüsü azaldıldı
+          text-align: center;
+          font-weight: 200;
+          margin-bottom: 8px;
+        }
+        button {
+          background: $color_4;
+          color: #fff;
+          width: 30px;
+          height: 20px;
+          padding-top: 10px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          border-radius: 28px 0 0;
+          opacity: 0;
+          transition: 0.3s;
+          box-shadow: -3px -3px 20px #00000034;
+          .icons {
+            width: 20px; // İkon ölçüsü azaldıldı
+            height: 20px; // İkon ölçüsü azaldıldı
+            text-align: center;
+          }
+        }
+        &:hover {
+          transform: translate(5px);
+          box-shadow: none;
+          button {
+            width: 60px;
+            height: 50px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
