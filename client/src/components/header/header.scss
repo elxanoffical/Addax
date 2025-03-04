@@ -12,25 +12,25 @@ header {
   right: 0;
   z-index: 1000;
   transition: transform 0.5s ease;
-}
 
-.header-hidden {
-  transform: translateY(-100%);
+  &.header-hidden {
+    transform: translateY(-100%);
+  }
 }
 
 #header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 12px; // padding azaldıldı
+  padding: 8px 12px;
 
   h2 {
-    font-size: 22px; 
+    font-size: 22px;
     font-weight: 500;
 
     span {
       color: $color_1;
-      font-size: 36px; 
+      font-size: 36px;
       font-weight: 700;
     }
   }
@@ -38,11 +38,11 @@ header {
 
 .navBar {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
 
   a {
     color: $color_2;
-    font-size: 18px; 
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.3px;
     transition: color 0.3s;
@@ -51,8 +51,90 @@ header {
       color: $color_1;
     }
   }
+}
 
-  #about {
-    color: $color_1;
+/* Menu düyməsi əvvəlcə gizlidir */
+.menu-btn {
+  display: none;
+  background: $color_4;
+  color: $color_3;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive tənzimləmələr */
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 16px;
+
+    h2 {
+      font-size: 20px;
+
+      span {
+        font-size: 32px;
+      }
+    }
+  }
+  /* Kiçik ekranlarda navBar gizlənir və menu düyməsi görünür */
+  .navBar {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* Modal menyu */
+.menu-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+
+  .modal-content {
+    background: $color_3;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .modal-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 40px;
+
+      a {
+        color: $color_2;
+        font-size: 16px;
+        font-weight: 500;
+        transition: color 0.3s;
+        
+        &:hover {
+          color: $color_1;
+        }
+      }
+    }
   }
 }
