@@ -1,86 +1,85 @@
 #contact {
-    padding: 80px 12px;
-    background: #f6f6f6;
-  
-    > .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
+  padding: 80px 12px;
+  background: #f6f6f6;
+
+  > .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .location-box {
+    border-bottom: 3px solid #ff2c57;
+    border-top: 3px solid #ff2c57;
+    background: #fff;
+    flex: 1;
+    min-width: 400px;
+  }
+
+  .map-info-box-wrapper {
+    padding: 16px;
+  }
+
+  .map-info-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+
+    > img {
+      width: 24px;
     }
-  
-    .location-box {
-      border-bottom: 3px solid #ff2c57;
-      border-top: 3px solid #ff2c57;
-      background: #fff;
-      flex: 1;
-      min-width: 400px;
-    }
-  
-    .map-info-box-wrapper {
-      padding: 16px;
-    }
-  
-    .map-info-box {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 16px 0;
-  
-      > img {
-        width: 24px;
-      }
-  
-      > p {
-        letter-spacing: 0.5px;
-        color: rgba(0, 0, 0, 0.594);
-        font-size: 14px;
-      }
-    }
-  
-    .contact-form-box {
-      min-width: 400px;
-      border-top: 2px solid #ff2c57;
-      border-bottom: 2px solid #ff2c57;
-      flex: 1;
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      gap: 16px;
-      padding: 16px;
-  
-      > h2 {
-        font-weight: 500;
-        letter-spacing: 1px;
-        color: #ff2c57;
-      }
-  
-      > .inpt-box {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        width: 100%;
-  
-        > label {
-          color: rgba(128, 128, 128, 0.614);
-        }
-  
-        > input,
-        textarea {
-          border: 1px solid rgba(128, 128, 128, 0.664);
-          border-radius: 8px;
-          padding: 8px 16px;
-        }
-      }
-  
-      > button {
-        padding: 8px 16px;
-        border-radius: 12px;
-        background: #ff2c57;
-        color: #fff;
-        letter-spacing: 0.7px;
-        font-size: 16px;
-      }
+
+    > p {
+      letter-spacing: 0.5px;
+      color: rgba(0, 0, 0, 0.594);
+      font-size: 14px;
     }
   }
-  
+
+  .contact-form-box {
+    min-width: 400px;
+    border-top: 2px solid #ff2c57;
+    border-bottom: 2px solid #ff2c57;
+    flex: 1;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    padding: 16px;
+
+    > h2 {
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #ff2c57;
+    }
+
+    > .inpt-box {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 100%;
+
+      > label {
+        color: rgba(128, 128, 128, 0.614);
+      }
+
+      > input,
+      textarea {
+        border: 1px solid rgba(128, 128, 128, 0.664);
+        border-radius: 8px;
+        padding: 8px 16px;
+      }
+    }
+
+    > button {
+      padding: 8px 16px;
+      border-radius: 12px;
+      background: #ff2c57;
+      color: #fff;
+      letter-spacing: 0.7px;
+      font-size: 16px;
+    }
+  }
+}

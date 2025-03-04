@@ -1,7 +1,26 @@
 import React from "react";
-import './contact.scss'
+import "./contact.scss";
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const res = await emailjs.sendForm(
+      "service_58nxouj", // service ID
+      "template_e1wxfpd", // template ID
+      e.target,
+      "Kba6m4BVFNbdasMZC" //public ID
+    );
+    if (res.status === 200) {
+      alert("Email sent succesfully!");
+    } else {
+      alert("Email failed to send");
+    }
+  };
+
   return (
     <section id="contact">
       <div className="container">
@@ -34,28 +53,26 @@ const Contact = () => {
           </div>
         </div>
 
-        <form onSubmit={''} 
-         className="contact-form-box">
+        <form onSubmit={handleSubmit} className="contact-form-box">
           <h2>Stay Connected</h2>
           <div className="inpt-box">
-            <label htmlFor="name">Name</label>
-            <input required id="name" type="text" />
+            <label htmlFor="name">FullName</label>
+            <input required id="name" name="fullName" type="text" />
           </div>
           <div className="inpt-box">
             <label htmlFor="email">Email</label>
-            <input required id="email" type="email" />
+            <input required id="email" name="email" type="email" />
           </div>
           <div className="inpt-box">
             <label htmlFor="phone">Phone Number</label>
-            <input required id="phone" type="number" />
+            <input required id="phone" name="phone" type="number" />
           </div>
           <div className="inpt-box">
             <label htmlFor="message">Message</label>
-            <textarea required rows="5" id="message"></textarea>
+            <textarea required rows="5" name="message" id="message"></textarea>
           </div>
           <button type="submit">Send Message</button>
         </form>
-
       </div>
     </section>
   );
