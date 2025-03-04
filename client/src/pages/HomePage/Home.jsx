@@ -9,29 +9,16 @@ import { FaCheck } from "react-icons/fa6";
 import video from "../../assets/image/about.jpg";
 import stragety from "../../assets/image/stragety.jpg";
 import Header from "../../components/header/header";
+import Hero from "../../components/hero/hero";
 
 const Home = () => {
   return (
     <div className="section">
        
        <Header/>
-
-      <div className="hero-wrapper">
-        <div className="blur">
-          <span>We Are Creative</span>
-          <h1>
-            The Best <span id="digital">Digital</span> Experience
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <div className="btn">
-            <button id="btn">Get started</button>
-            <button id="btnn">wiew work</button>
-          </div>
-        </div>
-      </div>
+       
+       <Hero/>
+     
 
       <div className="welcome-addax">
         <div className="container">
