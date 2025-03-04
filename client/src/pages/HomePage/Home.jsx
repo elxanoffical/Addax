@@ -9,6 +9,7 @@ import About from "../../components/about-addax/about";
 import Footer from "../../components/footer/footer";
 import Team from "../../components/team/team";
 import Pricing from "../../components/pricing/pricing";
+import Contact from "../../components/contact/contact";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Team />
       <Pricing/>
       <About />
+      <Contact/>
       <Footer />
 
       {/* <div className="strategy-addax">
