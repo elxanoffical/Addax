@@ -1,0 +1,59 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; 
+    background: #222;
+    color: #fff;
+    padding: 30px 0; 
+  
+    h2 {
+      font-size: 36px; 
+      font-weight: 600;
+  
+      span {
+        color: #ff2c57;
+        font-size: 40px; 
+      }
+    }
+  
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 10px; 
+  
+      .socialMediaBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        width: 40px; 
+        height: 40px; 
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            transform: translateY(-5px); 
+          }
+  
+        svg {
+          width: 20px; 
+          height: 20px; 
+        }
+  
+        &:hover {
+          border-color: #ff2c57;
+          background: #ff2c57;
+  
+          img {
+            color: #fff;
+          }
+        }
+  
+        p {
+          line-height: 0.8;
+        }
+      }
+    }
+  }
+  
