@@ -5,13 +5,13 @@ $color_4: #ff2c57;
 $font-family_1: "Poppins", sans-serif;
 
 .welcome-addax {
-  padding: 40px 0; // Ümumi padding azaldıldı
+  padding: 40px 0; 
   > .container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px; // Elementlər arasındakı boşluq azaldıldı
+    gap: 30px; 
 
     > .section-title {
       display: flex;
@@ -32,12 +32,12 @@ $font-family_1: "Poppins", sans-serif;
         transition: 0.5s;
         > #line1 {
           transition: 0.4s;
-          height: 50%; // Başlanğıc hündürlük azaldıldı
+          height: 50%; 
           border: 2px solid red;
         }
         > #line2 {
           transition: 0.4s;
-          height: 100%; // Başlanğıc hündürlük azaldıldı
+          height: 100%; 
           border: 2px solid red;
         }
       }
@@ -47,11 +47,11 @@ $font-family_1: "Poppins", sans-serif;
         gap: 6px;
         > span {
           color: $color_4;
-          font-size: 20px; // Font ölçüsü azaldıldı
+          font-size: 20px; 
           font-weight: 300;
         }
         > h1 {
-          font-size: 40px; // Font ölçüsü azaldıldı
+          font-size: 40px; 
           font-weight: 200;
           span {
             color: $color_4;
@@ -59,9 +59,9 @@ $font-family_1: "Poppins", sans-serif;
           }
         }
         p {
-          font-size: 18px; // Font ölçüsü azaldıldı
+          font-size: 18px; 
           font-weight: 200;
-          width: 700px; // Maksimum genişlik azaldıldı
+          width: 700px; 
         }
       }
     }
@@ -70,31 +70,31 @@ $font-family_1: "Poppins", sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 20px; // Boşluq azaldıldı
-      padding: 10px; // Padding azaldıldı
+      gap: 20px; 
+      padding: 10px; 
       
       .single-box {
-        padding: 20px; // Padding azaldıldı
-        height: 280px; // Hündürlük azaldıldı
+        padding: 20px; 
+        height: 280px; 
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 8px; // Aradakı boşluq azaldıldı
+        gap: 8px; 
         box-shadow: 5px 5px 40px #00000015;
         transition: 0.3s;
         position: relative;
         
         .icon {
           color: red;
-          width: 50px;  // İkon ölçüsü azaldıldı
-          height: 50px; // İkon ölçüsü azaldıldı
+          width: 50px;  
+          height: 50px;
         }
         h3 {
-          font-size: 22px; // Başlıq ölçüsü azaldıldı
+          font-size: 22px; 
           font-weight: 600;
         }
         p {
-          font-size: 18px; // Mətn ölçüsü azaldıldı
+          font-size: 18px; 
           text-align: center;
           font-weight: 200;
           margin-bottom: 8px;
@@ -113,8 +113,8 @@ $font-family_1: "Poppins", sans-serif;
           transition: 0.3s;
           box-shadow: -3px -3px 20px #00000034;
           .icons {
-            width: 20px; // İkon ölçüsü azaldıldı
-            height: 20px; // İkon ölçüsü azaldıldı
+            width: 20px; 
+            height: 20px; 
             text-align: center;
           }
         }
