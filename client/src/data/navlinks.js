@@ -1,15 +1,15 @@
 export const navlinks = [
     {
-        title: 'Ana sehife',
+        title: 'About us',
         href: '#mainpage'
     },
     {
-        title: 'Komandamiz',
+        title: 'Team',
         href: '#team'
     },
 
     {
-        title: 'Xidmetlerimiz',
+        title: 'Our services',
         href: '#services'
     }, 
     {
@@ -17,7 +17,7 @@ export const navlinks = [
         href: '#blog'
     },
     {
-        title: 'Elaqe',
+        title: 'Contact',
         href: '#contact'
     },
 ]

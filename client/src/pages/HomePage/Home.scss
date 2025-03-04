@@ -22,50 +22,12 @@ button {
 }
 .container {
 	width: 100%;
-	max-width: 1500px;
+	max-width: 1220px; // Maksimum genişlik verilib, konteynerin dağılmaması üçün
 	margin: 0 auto;
-}
-header {
-	background: #fff;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-}
-#header {
-	display: flex;
-	align-items: center;
-	padding: 20px 0;
-	justify-content: space-between;
-	h2 {
-		font-size: 24px;
-		font-weight: 500;
-		span {
-			color: $color_1;
-			font-size: 40px;
-			font-weight: 700;
-		}
-	}
-}
-.navBar {
-	display: flex;
-	gap: 26px;
-	a {
-		color: $color_2;
-		font-size: 20px;
-		font-weight: 500;
-		transition: 0.3s;
-		letter-spacing: 0.3px;
-	}
-	a {
-		&:hover {
-			color: $color_1;
-		}
-	}
-	#about {
-		color: $color_1;
-	}
-}
+	padding: 0 20px; // Səhifə kənarlarından bir az boşluq
+  }
+
+//////////////////////////////////////
 .hero-wrapper {
 	height: 120vh;
 	background-image: url("https://templates.envytheme.com/addax/default-light/assets/img/main-bg-1.jpg");
