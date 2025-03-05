@@ -186,7 +186,7 @@ $font-family_1: "Poppins", sans-serif;
     }
     .video {
       img {
-        height: 250px;
+        width: 100%;
       }
     }
   }
@@ -200,17 +200,17 @@ $font-family_1: "Poppins", sans-serif;
       > .section-title {
         flex-direction: column;
         align-items: flex-start;
-        .liner{
+        .liner {
           flex-direction: column;
           width: 50%;
-          #line1{
+          #line1 {
             width: 50%;
           }
-          #line2{
+          #line2 {
             width: 100%;
           }
         }
-       
+
         > .txt {
           > h1 {
             font-size: 30px;
@@ -254,7 +254,8 @@ $font-family_1: "Poppins", sans-serif;
         }
         .video {
           img {
-            height: 250px;
+            width: 100%;
+            object-fit: cover;
           }
         }
       }
@@ -308,7 +309,8 @@ $font-family_1: "Poppins", sans-serif;
         }
         .video {
           img {
-            height: 220px;
+            width: 100%;
+            object-fit: cover;
           }
         }
       }
@@ -363,7 +365,8 @@ $font-family_1: "Poppins", sans-serif;
         }
         .video {
           img {
-            max-height: 150px;
+            width: 100%;
+            object-fit: cover;
           }
         }
       }

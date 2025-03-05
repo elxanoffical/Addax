@@ -1,59 +1,162 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px; 
-    background: #222;
-    color: #fff;
-    padding: 30px 0; 
-  
-    h2 {
-      font-size: 36px; 
-      font-weight: 600;
-  
-      span {
-        color: #ff2c57;
-        font-size: 40px; 
-      }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; 
+  background: #222;
+  color: #fff;
+  padding: 30px 0; 
+
+  h2 {
+    font-size: 36px; 
+    font-weight: 600;
+
+    span {
+      color: #ff2c57;
+      font-size: 40px; 
     }
-  
-    .footer-links {
+  }
+  p{
+    font-size: 18px;
+    font-weight: 400;
+    span{
+      color: #ff2c57;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+
+    .socialMediaBox {
       display: flex;
       align-items: center;
-      gap: 10px; 
-  
+      justify-content: center;
+      border: 1px solid #fff;
+      width: 40px; 
+      height: 40px; 
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-5px); 
+      }
+
+      svg {
+        width: 20px; 
+        height: 20px; 
+      }
+
+      &:hover {
+        border-color: #ff2c57;
+        background: #ff2c57;
+
+        img {
+          color: #fff;
+        }
+      }
+
+    
+    }
+  }
+}
+
+/* Responsive Tənzimləmələr */
+
+/* 768px və aşağı */
+@media (max-width: 768px) {
+  .footer {
+    padding: 25px 0;
+
+    h2 {
+      font-size: 32px;
+
+      span {
+        font-size: 36px;
+      }
+    }
+
+    .footer-links {
+      gap: 8px;
+
       .socialMediaBox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #fff;
-        width: 40px; 
-        height: 40px; 
-        border-radius: 50%;
-        cursor: pointer;
-        transition: 0.3s;
-        &:hover {
-            transform: translateY(-5px); 
-          }
-  
+        width: 35px;
+        height: 35px;
+
         svg {
-          width: 20px; 
-          height: 20px; 
-        }
-  
-        &:hover {
-          border-color: #ff2c57;
-          background: #ff2c57;
-  
-          img {
-            color: #fff;
-          }
-        }
-  
-        p {
-          line-height: 0.8;
+          width: 18px;
+          height: 18px;
         }
       }
     }
   }
-  
+}
+
+/* 480px və aşağı */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 0;
+
+    h2 {
+      font-size: 28px;
+
+      span {
+        font-size: 32px;
+      }
+    }
+    p{
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .footer-links {
+      gap: 6px;
+
+      .socialMediaBox {
+        width: 30px;
+        height: 30px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}
+
+/* 320px və aşağı */
+@media (max-width: 320px) {
+  .footer {
+    padding: 15px 0;
+
+    h2 {
+      font-size: 24px;
+
+      span {
+        font-size: 28px;
+      }
+    }
+    p{
+      font-size: 10px;
+    }
+
+    .footer-links {
+      gap: 5px;
+
+      .socialMediaBox {
+        width: 28px;
+        height: 28px;
+
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+}
