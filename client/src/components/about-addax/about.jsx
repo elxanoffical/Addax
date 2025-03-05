@@ -5,7 +5,7 @@ import video from "../../assets/image/about.jpg";
 
 const About = () => {
   return (
-      <div className="about-addax">
+      <div id='about' className="about-addax">
            <div className="container">
              <div className="section-title">
                <div className="liner">

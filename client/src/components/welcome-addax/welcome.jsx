@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Welcome = () => {
   return (
-    <div className="welcome-addax">
+    <div id="blog" className="welcome-addax">
       <div className="container">
         <div className="section-title">
           <div className="liner">

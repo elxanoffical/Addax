@@ -11,7 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Team = () => {
   return (
     <section id="team-section">
-      <div className="container">
+      <div id="team" className="container">
         <div id="section-header">
           <div className="liner">
             <div id="line1"></div>

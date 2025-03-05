@@ -3,7 +3,7 @@ import "./pricing.scss";
 
 const Pricing = () => (
   <section id="pricing-section">
-    <div className="container">
+    <div id="services" className="container">
       <div id="section-header">
         <div className="liner">
           <div id="line1" className="line1"></div>
