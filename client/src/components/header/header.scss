@@ -67,7 +67,8 @@ header {
 /* Responsive tənzimləmələr */
 @media screen and (max-width: 768px) {
   #header {
-    flex-direction: column;
+
+    display: flex;
     align-items: center;
     padding: 10px 16px;
 
@@ -79,7 +80,6 @@ header {
       }
     }
   }
-  /* Kiçik ekranlarda navBar gizlənir və menu düyməsi görünür */
   .navBar {
     display: none;
   }
@@ -111,8 +111,8 @@ header {
 
     .close-btn {
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 5px;
+      right: 12px;
       background: none;
       border: none;
       font-size: 20px;

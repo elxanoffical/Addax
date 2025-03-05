@@ -1,7 +1,7 @@
 export const navlinks = [
     {
-        title: 'About us',
-        href: '#about'
+        title: 'blog',
+        href: '#blog'
     },
     {
         title: 'Team',
@@ -13,8 +13,8 @@ export const navlinks = [
         href: '#services'
     }, 
     {
-        title: 'Bloq',
-        href: '#blog'
+        title: 'about us',
+        href: '#about'
     },
     {
         title: 'Contact',

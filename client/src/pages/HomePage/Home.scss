@@ -20,6 +20,10 @@ $font-family_1: "Poppins", sans-serif;
 button {
 	cursor: pointer;
 }
+html{
+	scroll-behavior: smooth;
+
+}
 .container {
 	width: 100%;
 	max-width: 1220px; 

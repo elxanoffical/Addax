@@ -21,8 +21,9 @@
     font-weight: 400;
     span{
       color: #ff2c57;
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 700;
+      letter-spacing: 1px;
     }
   }
 
@@ -110,7 +111,11 @@
     }
     p{
       text-align: center;
-      font-size: 16px;
+      font-size: 10px;
+      span{
+        font-size: 16px;
+        font-weight: 600;
+      }
     }
 
     .footer-links {
@@ -143,6 +148,10 @@
     }
     p{
       font-size: 10px;
+      span{
+        font-size: 16px;
+        font-weight: 600;
+      }
     }
 
     .footer-links {

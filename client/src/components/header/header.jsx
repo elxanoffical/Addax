@@ -40,7 +40,6 @@ const Header = () => {
             </a>
           ))}
         </nav>
-        {/* Kiçik ekranlarda göstəriləcək menyu düyməsi */}
         <button className="menu-btn" onClick={toggleModal}>
           Menu
         </button>
