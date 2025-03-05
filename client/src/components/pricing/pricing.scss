@@ -172,3 +172,102 @@ $font-family_1: "Poppins", sans-serif;
         transform: translate(5px);
     }
 }
+
+/* Responsive Tənzimləmələr */
+
+/* 768px və aşağı */
+@media (max-width: 768px) {
+    #pricing-section {
+        padding: 40px 20px;
+    }
+    #section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        .liner{
+            flex-direction: column;
+            width: 50%;
+            #line1{
+              width: 50%;
+            }
+            #line2{
+              width: 100%;
+            }
+          }
+        > .txt {
+            > h2 {
+                font-size: 32px;
+            }
+            > p {
+                font-size: 16px;
+                max-width: 100%;
+            }
+        }
+    }
+    .price-cards-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .price-card {
+        max-width: 48%;
+    }
+}
+
+/* 480px və aşağı */
+@media (max-width: 480px) {
+    #pricing-section {
+        padding: 30px 10px;
+    }
+    #section-header {
+        > .txt {
+            > h2 {
+                font-size: 28px;
+            }
+            > p {
+                font-size: 15px;
+            }
+        }
+    }
+    .price-card {
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    .price-card .header-wrapper h2 {
+        font-size: 22px;
+    }
+    .price-card .price-wrapper .price-main-wrapper h2 {
+        font-size: 32px;
+        sup {
+            font-size: 20px;
+        }
+    }
+}
+
+/* 320px və aşağı */
+@media (max-width: 320px) {
+    #pricing-section {
+        padding: 20px 5px;
+    }
+    #section-header {
+        > .txt {
+            > h2 {
+                font-size: 24px;
+            }
+            > p {
+                font-size: 14px;
+            }
+        }
+    }
+    .price-card {
+        padding: 15px 0;
+    }
+    .price-card .header-wrapper h2 {
+        font-size: 20px;
+    }
+    .price-card .price-wrapper .price-main-wrapper h2 {
+        font-size: 28px;
+        sup {
+            font-size: 18px;
+        }
+    }
+}
