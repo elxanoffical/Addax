@@ -83,3 +83,137 @@
     }
   }
 }
+
+/* Responsive Tənzimləmələr */
+
+/* 768px və aşağı */
+@media (max-width: 768px) {
+  #contact {
+    padding: 60px 20px;
+    
+    > .container {
+      flex-direction: column;
+    }
+    
+    .location-box,
+    .contact-form-box {
+      min-width: 100%;
+    }
+    
+    .map-info-box {
+      gap: 12px;
+      padding: 12px 0;
+      
+      > img {
+        width: 20px;
+      }
+      
+      > p {
+        font-size: 13px;
+      }
+    }
+    
+    .contact-form-box {
+      padding: 14px;
+      
+      > button {
+        font-size: 15px;
+        padding: 7px 14px;
+      }
+    }
+  }
+}
+
+/* 480px və aşağı */
+@media (max-width: 480px) {
+  #contact {
+    padding: 50px 15px;
+    
+    .location-box,
+    .contact-form-box {
+      padding: 12px;
+    }
+    
+    .map-info-box {
+      gap: 10px;
+      
+      > img {
+        width: 18px;
+      }
+      
+      > p {
+        font-size: 12px;
+      }
+    }
+    
+    .contact-form-box {
+      > h2 {
+        font-size: 20px;
+      }
+      
+      > .inpt-box {
+        > label {
+          font-size: 12px;
+        }
+        
+        > input,
+        textarea {
+          padding: 6px 12px;
+          font-size: 14px;
+        }
+      }
+      
+      > button {
+        font-size: 14px;
+        padding: 7px 12px;
+      }
+    }
+  }
+}
+
+/* 320px və aşağı */
+@media (max-width: 320px) {
+  #contact {
+    padding: 40px 10px;
+    
+    .location-box,
+    .contact-form-box {
+      padding: 10px;
+    }
+    
+    .map-info-box {
+      gap: 8px;
+      
+      > img {
+        width: 16px;
+      }
+      
+      > p {
+        font-size: 11px;
+      }
+    }
+    
+    .contact-form-box {
+      > h2 {
+        font-size: 18px;
+      }
+      
+      > .inpt-box {
+        > label {
+          font-size: 11px;
+        }
+        
+        > input,
+        textarea {
+          padding: 5px 10px;
+          font-size: 13px;
+        }
+      }
+      
+      > button {
+        font-size: 13px;
+        padding: 6px 10px;
+      }
+    }
+  }
+}
