@@ -144,7 +144,8 @@ $font-family_1: "Poppins", sans-serif;
       .video {
         img {
           height: 300px;
-          width: auto;
+          width: 100%;
+          object-fit: cover;
         }
       }
     }
@@ -152,6 +153,16 @@ $font-family_1: "Poppins", sans-serif;
 }
 
 /* Responsive Tənzimləmələr */
+
+// @media (max-width: 1220px) {
+//   .marketing-video{
+//     .video{
+//       img{
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
 @media (max-width: 1024px) {
   .marketing-video {
     flex-direction: column;
@@ -234,11 +245,15 @@ $font-family_1: "Poppins", sans-serif;
             }
           }
           .bottom-wrapper {
-            gap: 20px;
+            gap: 60px;
+            padding: 5px 0;
             .txt-wrapper {
               .txt {
+                display: flex;
+                gap: 6px;
                 p {
                   font-size: 15px;
+                  
                 }
                 .icon {
                   width: 16px;
@@ -250,6 +265,8 @@ $font-family_1: "Poppins", sans-serif;
           button {
             font-size: 15px;
             padding: 8px 18px;
+            margin: 6px 0;
+            
           }
         }
         .video {
@@ -349,7 +366,7 @@ $font-family_1: "Poppins", sans-serif;
             .txt-wrapper {
               .txt {
                 p {
-                  font-size: 13px;
+                  font-size: 11px;
                 }
                 .icon {
                   width: 12px;
