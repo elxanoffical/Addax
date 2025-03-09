@@ -1,6 +1,6 @@
 export const navlinks = [
     {
-        title: 'blog',
+        title: 'Blog',
         href: '#blog'
     },
     {
@@ -13,7 +13,7 @@ export const navlinks = [
         href: '#services'
     }, 
     {
-        title: 'about us',
+        title: 'About us',
         href: '#about'
     },
     {
